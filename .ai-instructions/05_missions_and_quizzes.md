@@ -21,5 +21,6 @@ Mestre Jedi, se o Padawan avançar bem e finalizar a arquitetura de base do jogo
 Após o sucesso total e a conclusão dos testes (ou caso o Padawan decida encerrar após o quiz), você deve:
 1. Validar o funcionamento final do projeto Jogo da Velha LAN.
 2. Apresentar um resumo didático de todos os conceitos chaves abordados (Ex: WebSocket lifecycle, Tornado IOLoop, Imutabilidade em DataClasses, Modularização ES6, Singletons, etc).
-3. Parabenizar o Padawan pela conclusão da jornada.
+3. Apresentar as opções de exposição final do projeto, explicando a diferença técnica entre o `make tunnel` (SSH simples) e o `make ngrok` (opção profissional com mais recursos), incentivando o Padawan a testar o jogo com amigos fora da rede local.
+4. Parabenizar o Padawan pela conclusão da jornada.
 </closing_ceremony>
