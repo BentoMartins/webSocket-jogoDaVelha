@@ -1,4 +1,4 @@
-# ⚔️ Jogo da Velha — Imersão em Sistemas Distribuídos com IA
+# ⚔️ Jogo da velha — imersão em sistemas distribuídos com IA
 
 Seja bem-vindo ao ambiente de criação do **Jogo da Velha Distribuído**, utilizando uma **IA de Mentoria** para guiar o aprendizado em Python, Tornado e WebSockets.
 
@@ -8,7 +8,7 @@ Este repositório foi montado como uma **Jornada de Aprendizado Pedagógica (#an
 
 ---
 
-## 🏗️ Estrutura do Ambiente
+## 🏗️ Estrutura do ambiente
 
 A verdadeira "mágica" arquitetural e pedagógica não está solta na raiz, mas sim encapsulada nestes arquivos e diretórios essenciais:
 
@@ -23,7 +23,7 @@ O diretório `.ai-instructions/` contém o gabarito arquitetural do servidor e d
 
 ---
 
-## 🤖 Dinâmica de Ensino (AGENTS.md)
+## 🤖 Dinâmica de ensino (AGENTS.md)
 
 Este projeto utiliza o padrão [AGENTS.md](https://agents.md/) para definir e orquestrar a inteligência artificial. Essa abordagem garante que a IA não atue apenas como um gerador de código, mas como um tutor ativo que:
 
@@ -33,7 +33,7 @@ Este projeto utiliza o padrão [AGENTS.md](https://agents.md/) para definir e or
 
 ---
 
-## 🚀 Primeiros Passos: Ativando sua Imersão
+## 🚀 Primeiros passos: ativando sua imersão
 
 Para dar início ao desenvolvimento, você precisará utilizar uma IDE acoplada a um assistente de IA (ex: Cursor, Cline, Roo Code, etc.) configurada no diretório atual:
 
@@ -45,7 +45,7 @@ Deste ponto em diante, apenas siga o plano arquitetural do Mestre Jedi para codi
 
 ---
 
-## 🏆 O Que o Padawan Terá Construído ao Final do Treinamento?
+## 🏆 O que você terá construído ao final do treinamento?
 
 Ao concluir esta jornada de mentoria, você terá em mãos um jogo robusto e totalmente jogável pela internet, contendo as seguintes funcionalidades:
 
@@ -53,7 +53,7 @@ Ao concluir esta jornada de mentoria, você terá em mãos um jogo robusto e tot
 * 🚪 **Sistema de Salas Privadas:** Criação de partidas isoladas via links ou QR Codes. Dezenas de duplas podem jogar simultaneamente no seu servidor sem interferirem no tabuleiro uns dos outros.
 * 📱 **Interface Moderna e Responsiva:** Visual imersivo, fluido e desenhado para gerar uma excelente experiência tanto no desktop quanto no celular.
 
-### 🚀 Principais Skills Adquiridas
+### 🚀 Principais skills adquiridas
 
 Finalizar este treinamento comprovará seu domínio tático nas seguintes trincheiras:
 
