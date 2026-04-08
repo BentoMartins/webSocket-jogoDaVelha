@@ -1,8 +1,8 @@
-# ⚔️ Jogo da Velha Distribuído (Mentoria com IA)
+# ⚔️ Jogo da Velha Distribuído — Dinâmica Prática com IA
 
 Seja bem-vindo ao ambiente de criação do **Jogo da Velha Distribuído**, utilizando uma **IA de Mentoria** para guiar o aprendizado em Python, Tornado e WebSockets.
 
-> 💡 **Nota do Mestre:** A Inteligência Artificial neste projeto é utilizada **exclusivamente para o ensino** e auxílio na criação do código. O jogo em si é estritamente multijogador (Humano vs Humano) e não conta com um bot ou oponente controlado por IA.
+> 💡 **Nota:** A Inteligência Artificial neste projeto é utilizada **exclusivamente para o ensino** e auxílio na criação do código. O jogo em si é estritamente multijogador (Humano vs Humano) e não conta com um bot ou oponente controlado por IA.
 
 Este repositório foi montado como uma **Jornada de Aprendizado Pedagógica (#anti-vibe-coding)**. O objetivo não é apenas gerar código de forma caótica, mas permitir que você (o Padawan) aprenda a construir um sistema distribuído robusto com a supervisão atenta do agente inteligente **Mestre Jedi**.
 
