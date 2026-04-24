@@ -1,66 +1,44 @@
-# ⚔️ Jogo da Velha — Imersão em Sistemas Distribuídos com IA
+# 🎮 Jogo da Velha — WebSocket + Tornado
 
-Seja bem-vindo ao ambiente de criação do **Jogo da Velha Distribuído**, utilizando uma **IA de Mentoria** para guiar o aprendizado em Python, Tornado e WebSockets.
+Sistema multiplayer em tempo real construído com Python, Tornado e WebSockets.
 
-> 💡 **Nota:** A Inteligência Artificial neste projeto é utilizada **exclusivamente para o ensino** e auxílio na criação do código. O jogo em si é estritamente multijogador (Humano vs Humano) e não conta com um bot ou oponente controlado por IA.
+## 🚀 Como executar
 
-Este repositório foi montado como uma **Jornada de Aprendizado Pedagógica (#anti-vibe-coding)**. O objetivo não é apenas gerar código de forma caótica, mas permitir que você (o Padawan) aprenda a construir um sistema distribuído robusto com a supervisão atenta do agente inteligente **Mestre Jedi**.
+```bash
+# Instalar dependências
+make setup
 
----
+# Iniciar servidor
+make run
 
-## 🏗️ Estrutura do ambiente
+Acesse http://localhost:8888 no navegador.
 
-A verdadeira "mágica" arquitetural e pedagógica não está solta na raiz, mas sim encapsulada nestes arquivos e diretórios essenciais:
+🌐 Expor para a internet
 
-```text
-websocket-jogo-da-velha-com-ia/
-├── AGENTS.md                  # 🧙‍♂️ Orquestrador: Arquivo raiz que converte a IA no "Mestre Jedi".
-├── .ai-instructions/          # 🧠 Cérebro do Jedi: Regras, arquitetura e restrições.
-└── README.md                  # 📖 Este arquivo, contendo as instruções iniciais e de uso.
-```
+# Servidor + túnel SSH (subdomínio fixo)
+make dev-serveo
 
-O diretório `.ai-instructions/` contém o gabarito arquitetural do servidor e do frontend. **Evite inspecionar** diretamente estes arquivos se desejar ter a experiência educacional completa de ser guiado e desafiado pela IA.
+# Servidor + túnel SSH (URL aleatória)
+make dev-lhr
 
----
+# Encerrar tudo
+make stop
 
-## 🤖 Dinâmica de ensino (AGENTS.md)
+🏗️ Arquitetura
 
-Este projeto utiliza o padrão [AGENTS.md](https://agents.md/) para definir e orquestrar a inteligência artificial. Essa abordagem garante que a IA não atue apenas como um gerador de código, mas como um tutor ativo que:
+├── core/        # Configuração e logger centralizados
+├── game/        # Domínio puro (GameState imutável + GameLogic)
+├── server/      # Camada Tornado (WebSocket handlers + RoomManager)
+├── hardware/    # Integração Raspberry Pi (LCD + Buzzer)
+└── client/      # Frontend ES6 modular (ws.js, ui.js, main.js)
 
-1. **Mantém a Persona:** Age rigorosamente como o Mestre Jedi.
-2. **Segue um Framework Cognitivo:** Aplica uma metodologia pedagógica modularizada e estruturada.
-3. **Erradica o "Vibe Coding":** Impõe planejamento e reflexão antes de qualquer linha de código ser gerada, garantindo que o Padawan entenda o "porquê" de cada implementação.
+ Testes
 
----
+./venv/bin/pytest tests/ -v --cov=game --cov-report=term-missing
+Cobertura atual: 96%
 
-## 🚀 Primeiros passos: Ativando sua imersão
-
-Para dar início ao desenvolvimento, você precisará utilizar uma IDE acoplada a um assistente de IA (ex: Cursor, Cline, Roo Code, etc.) configurada no diretório atual:
-
-1. **Abra a pasta** `websocket-jogo-da-velha-com-ia` na sua IDE de escolha.
-2. **Inicie o Agente de IA** (Chat / Composer).
-3. **Primeira Interação:** Basta enviar um simples "Olá" no chat inicial! O agente fará a leitura autônoma da cadeia de diretivas e arquivos ocultos para se inicializar.
-
-Deste ponto em diante, apenas siga o plano arquitetural do Mestre Jedi para codificar o projeto!
-
----
-
-## 🏆 O que você terá construído ao final do treinamento?
-
-Ao concluir esta jornada de mentoria, você terá em mãos um jogo robusto e totalmente jogável pela internet, contendo as seguintes funcionalidades:
-
-* 🎮 **Partidas Multijogador em Tempo Real:** Jogue contra seus amigos remotamente. As jogadas e estados de vitória são refletidos instantaneamente nos dois navegadores.
-* 🚪 **Sistema de Salas Privadas:** Criação de partidas isoladas via links ou QR Codes. Dezenas de duplas podem jogar simultaneamente no seu servidor sem interferirem no tabuleiro uns dos outros.
-* 📱 **Interface Moderna e Responsiva:** Visual imersivo, fluido e desenhado para gerar uma excelente experiência tanto no desktop quanto no celular.
-
-### 🚀 Principais habilidades adquiridas
-
-Finalizar este treinamento comprovará seu domínio tático nas seguintes trincheiras:
-
-* **Arquitetura Python Moderna:** Uso intensivo de Type Hints, Dataclasses e programação assíncrona (Async/Await) com **Tornado**.
-* **Comunicação Bidirecional & WebTech:** Fluência em WebSockets, manipulação de DOM e reatividade, utilizando estritamente **JavaScript Puro, HTML e CSS**.
-* **Sistemas Desacoplados:** Separação estrita de responsabilidades entre Cliente (Reativo) e Servidor (Autoritário).
-* **Estilização responsiva:** Criação de interfaces imersivas combinando a praticidade dos utilitários do **Tailwind** com customizações nativas em **CSS**.
-* **DevOps & Automação Local:** Domínio de orquestração de comandos utilizando **Makefile** e exposição de servidores locais para a internet pública via **Túneis Reverso SSH**.
-
-> *"Em um lugar escuro nos encontramos, e um pouco mais de conhecimento ilumina nosso caminho." — Yoda*
+🛠️ Tecnologias
+Python 3.12 + Tornado 6.5
+WebSockets (RFC 6455)
+HTML + Tailwind CSS + ES6 Modules
+Túnel SSH reverso (serveo.net / localhost.run)

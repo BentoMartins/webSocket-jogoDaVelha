@@ -1,0 +1,5 @@
+tornado
+RPLCD
+RPi.GPIO
+pytest
+pytest-cov

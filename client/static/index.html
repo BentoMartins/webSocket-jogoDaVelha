@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Velha</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center gap-6">
+
+  <h1 class="text-4xl font-bold tracking-tight">Jogo da Velha</h1>
+
+  <div id="status-box" class="text-lg text-yellow-300 font-medium">Conectando...</div>
+
+  <div id="board" class="grid grid-cols-3 gap-2 hidden">
+    <button class="cell" data-row="0" data-col="0"></button>
+    <button class="cell" data-row="0" data-col="1"></button>
+    <button class="cell" data-row="0" data-col="2"></button>
+    <button class="cell" data-row="1" data-col="0"></button>
+    <button class="cell" data-row="1" data-col="1"></button>
+    <button class="cell" data-row="1" data-col="2"></button>
+    <button class="cell" data-row="2" data-col="0"></button>
+    <button class="cell" data-row="2" data-col="1"></button>
+    <button class="cell" data-row="2" data-col="2"></button>
+  </div>
+
+  <button id="reset-btn" class="hidden bg-indigo-600 hover:bg-indigo-500 px-6 py-2 rounded-lg font-semibold">
+    Jogar Novamente
+  </button>
+
+  <a id="share-link" href="#" class="hidden text-sm text-blue-400 underline">
+    Copiar link para convidar jogador
+  </a>
+
+  <style>
+    .cell {
+      width: 100px; height: 100px;
+      background: #1f2937;
+      border: 2px solid #4b5563;
+      border-radius: 8px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cell:hover { background: #374151; }
+  </style>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
